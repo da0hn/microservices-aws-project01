@@ -43,10 +43,11 @@ tasks.register('unpack', Copy) {
 }
 
 docker {
-  name "${project.group}/${project.name}"
+  name "da0hn/${project.name}"
   buildx true
   platform 'linux/amd64'
   copySpec.from(tasks.unpack.outputs).into('dependency')
-  buildArgs(['DEPENDENCY': 'build/dependency'])
+  buildArgs(['DEPENDENCY': 'dependency'])
+  dockerfile file('Dockerfile')
 }
 
