@@ -19,4 +19,10 @@ public class TestController {
     return ResponseEntity.ok("name: " + name);
   }
 
+  @GetMapping("/hello-world")
+  public ResponseEntity<String> helloWorld() {
+    return ResponseEntity.ok("Hello World");
+  }
+
+
 }
