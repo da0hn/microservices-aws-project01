@@ -8,13 +8,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+@Builder
 @Entity
 @Setter
 @Getter
@@ -25,6 +28,9 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product implements Serializable {
+
+  @Serial
+  private static final long serialVersionUID = 8667687833848195317L;
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
