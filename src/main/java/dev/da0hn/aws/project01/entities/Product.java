@@ -49,4 +49,7 @@ public class Product implements Serializable {
   @Column(name = "price", nullable = false)
   private BigDecimal price;
 
+  @Column(name = "color")
+  private String color;
+
 }

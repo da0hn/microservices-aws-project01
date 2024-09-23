@@ -41,6 +41,7 @@ public class ProductControllerTest extends IntegrationTest {
       .body("model", Matchers.equalTo("Modelo 1"))
       .body("code", Matchers.equalTo("ABCD1234"))
       .body("price", Matchers.equalTo(1999.99F))
+      .body("color", Matchers.equalTo("fuchsia"))
       .log();
   }
 
@@ -68,6 +69,7 @@ public class ProductControllerTest extends IntegrationTest {
       .body("model", Matchers.equalTo("Modelo 2"))
       .body("code", Matchers.equalTo("WXYZ9876"))
       .body("price", Matchers.equalTo(2500.00F))
+      .body("color", Matchers.equalTo("red"))
       .log();
   }
 
@@ -124,6 +126,7 @@ public class ProductControllerTest extends IntegrationTest {
       .body("model", Matchers.equalTo("Modelo 1"))
       .body("code", Matchers.equalTo("ABCD1234"))
       .body("price", Matchers.equalTo(1999.99F))
+      .body("color", Matchers.equalTo("fuchsia"))
       .log();
   }
 
@@ -150,6 +153,7 @@ public class ProductControllerTest extends IntegrationTest {
       .body("model", Matchers.equalTo("Modelo 1"))
       .body("code", Matchers.equalTo("ABCD1234"))
       .body("price", Matchers.equalTo(1999.99F))
+      .body("color", Matchers.equalTo("fuchsia"))
       .log();
   }
 

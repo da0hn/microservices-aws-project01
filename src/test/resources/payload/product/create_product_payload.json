@@ -2,5 +2,6 @@
   "name": "Produto 1",
   "model": "Modelo 1",
   "code": "ABCD1234",
-  "price": 1999.99
+  "price": 1999.99,
+  "color": "fuchsia"
 }
